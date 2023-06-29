@@ -1,0 +1,17 @@
+{
+    "name": "kafkareader",
+    "parameter": {
+        "parameter": {
+            "topic": "first",
+            "bootstrapServers": "192.168.10.67:9092",
+            "kafkaPartitions": "1",
+            "isList":1,
+            "groupId":"test-consumer-group",
+            "column":[
+                "id",
+                "name",
+                "age"
+            ]
+        }
+    }
+}

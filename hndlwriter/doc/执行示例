@@ -1,0 +1,140 @@
+Active code page: 65001
+
+C:\Users\rh\Desktop\后端\DataX\target\datax\datax\bin>python datax.py ../job/job.json
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+2020-12-22 16:02:56.490 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2020-12-22 16:02:56.496 [main] INFO  Engine - the machine info  =>
+
+        osInfo: Oracle Corporation 1.8 25.162-b12
+        jvmInfo:        Windows 10 amd64 10.0
+        cpu num:        4
+
+        totalPhysicalMemory:    -0.00G
+        freePhysicalMemory:     -0.00G
+        maxFileDescriptorCount: -1
+        currentOpenFileDescriptorCount: -1
+
+        GC Names        [PS MarkSweep, PS Scavenge]
+
+        MEMORY_NAME                    | allocation_size                | init_size
+        PS Eden Space                  | 256.00MB                       | 256.00MB
+        Code Cache                     | 240.00MB                       | 2.44MB
+        Compressed Class Space         | 1,024.00MB                     | 0.00MB
+        PS Survivor Space              | 42.50MB                        | 42.50MB
+        PS Old Gen                     | 683.00MB                       | 683.00MB
+        Metaspace                      | -0.00MB                        | 0.00MB
+
+
+2020-12-22 16:02:56.514 [main] INFO  Engine -
+{
+        "content":[
+                {
+                        "reader":{
+                                "name":"restfulapireader",
+                                "parameter":{
+                                        "bodyParam":{
+                                                "age":20,
+                                                "name":"zyw"
+                                        },
+                                        "column":[
+                                                "id",
+                                                "name",
+                                                "age",
+                                                "create_time"
+                                        ],
+                                        "dataPath":"data",
+                                        "headerInfos":{
+                                                "key":"value",
+                                                "token":"123456"
+                                        },
+                                        "method":"get",
+                                        "queryParam":{
+                                                "id":1,
+                                                "name":"xxx"
+                                        },
+                                        "url":"http://127.0.0.1:8080/get/a"
+                                }
+                        },
+                        "writer":{
+                                     "name": "hndlwriter",
+                                     "parameter": {
+                                         "topic": "",
+                                         "url": "",
+                                         "method": "",
+                                         "dataPath": "",
+                                         "column": [],
+                                         "columnMap": [{
+                                             "columnName": "id",
+                                             "columnType": "Integer"
+                                         },
+                                             {
+                                                 "columnName": "name",
+                                                 "columnType": "String"
+                                             }],
+                                         "bootstrapServers": [],
+                                         "headerInfos": {},
+                                         "bodyParam":{},
+                                         "queryParam":{}
+                                     }
+                        }
+                }
+        ],
+}
+
+2020-12-22 16:02:56.536 [main] WARN  Engine - prioriy set to 0, because NumberFormatException, the value is: null
+2020-12-22 16:02:56.539 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false, priority=0
+2020-12-22 16:02:56.539 [main] INFO  JobContainer - DataX jobContainer starts job.
+2020-12-22 16:02:56.542 [main] INFO  JobContainer - Set jobId = 0
+2020-12-22 16:02:57.258 [job-0] INFO  OriginalConfPretreatmentUtil - table:[t] all columns:[
+id,name,age,create_time
+].
+2020-12-22 16:02:57.271 [job-0] INFO  OriginalConfPretreatmentUtil - Write data [
+INSERT INTO %s (id,name,age,create_time) VALUES(?,?,?,?)
+], which jdbcUrl like:[jdbc:mysql://localhost:3306/area?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true]
+2020-12-22 16:02:57.272 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2020-12-22 16:02:57.273 [job-0] INFO  JobContainer - DataX Reader.Job [restfulapireader] do prepare work .
+2020-12-22 16:02:57.274 [job-0] INFO  JobContainer - DataX Writer.Job [mysqlwriter] do prepare work .
+2020-12-22 16:02:57.277 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2020-12-22 16:02:57.278 [job-0] INFO  JobContainer - Job set Channel-Number to 2 channels.
+2020-12-22 16:02:57.283 [job-0] INFO  JobContainer - DataX Reader.Job [restfulapireader] splits to [1] tasks.
+2020-12-22 16:02:57.284 [job-0] INFO  JobContainer - DataX Writer.Job [mysqlwriter] splits to [1] tasks.
+2020-12-22 16:02:57.310 [job-0] INFO  JobContainer - jobContainer starts to do schedule ...
+2020-12-22 16:02:57.319 [job-0] INFO  JobContainer - Scheduler starts [1] taskGroups.
+2020-12-22 16:02:57.323 [job-0] INFO  JobContainer - Running by standalone Mode.
+2020-12-22 16:02:57.347 [taskGroup-0] INFO  TaskGroupContainer - taskGroupId=[0] start [1] channels for [1] tasks.
+2020-12-22 16:02:57.358 [taskGroup-0] INFO  Channel - Channel set byte_speed_limit to -1, No bps activated.
+2020-12-22 16:02:57.362 [taskGroup-0] INFO  Channel - Channel set record_speed_limit to -1, No tps activated.
+2020-12-22 16:02:57.379 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] attemptCount[1] is started
+2020-12-22 16:02:57.483 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] is successed, used[105]ms
+2020-12-22 16:02:57.484 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] completed it's tasks.
+2020-12-22 16:03:07.389 [job-0] INFO  StandAloneJobContainerCommunicator - Total 100 records, 5090 bytes | Speed 509B/s, 10 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 100.00%
+2020-12-22 16:03:07.390 [job-0] INFO  AbstractScheduler - Scheduler accomplished all tasks.
+2020-12-22 16:03:07.404 [job-0] INFO  JobContainer - DataX Writer.Job [mysqlwriter] do post work.
+2020-12-22 16:03:07.406 [job-0] INFO  JobContainer - DataX Reader.Job [restfulapireader] do post work.
+2020-12-22 16:03:07.408 [job-0] INFO  JobContainer - DataX jobId [0] completed successfully.
+2020-12-22 16:03:07.412 [job-0] INFO  HookInvoker - No hook invoked, because base dir not exists or is a file: C:\Users\rh\Desktop\后端\DataX\target\datax\datax\hook
+2020-12-22 16:03:07.414 [job-0] INFO  JobContainer -
+         [total cpu info] =>
+                averageCpu                     | maxDeltaCpu                    | minDeltaCpu
+                -1.00%                         | -1.00%                         | -1.00%
+
+
+         [total gc info] =>
+                 NAME                 | totalGCCount       | maxDeltaGCCount    | minDeltaGCCount    | totalGCTime        | maxDeltaGCTime     | minDeltaGCTime
+                 PS MarkSweep         | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s
+                 PS Scavenge          | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s
+
+2020-12-22 16:03:07.415 [job-0] INFO  JobContainer - PerfTrace not enable!
+2020-12-22 16:03:07.422 [job-0] INFO  StandAloneJobContainerCommunicator - Total 100 records, 5090 bytes | Speed 509B/s, 10 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 100.00%
+2020-12-22 16:03:07.434 [job-0] INFO  JobContainer -
+任务启动时刻                    : 2020-12-22 16:02:56
+任务结束时刻                    : 2020-12-22 16:03:07
+任务总计耗时                    :                 10s
+任务平均流量                    :              509B/s
+记录写入速度                    :             10rec/s
+读出记录总数                    :                 100
+读写失败总数                    :                   0

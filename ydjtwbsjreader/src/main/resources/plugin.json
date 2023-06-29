@@ -1,0 +1,6 @@
+{
+    "name": "ydjtwbsjreader",
+    "class": "com.alibaba.datax.plugin.reader.ydjtwbsjreader.YdjtWbsjReader",
+    "description": "YdjtWbsjReader from http",
+    "developer": "rh"
+}

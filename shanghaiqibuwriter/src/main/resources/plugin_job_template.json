@@ -1,0 +1,16 @@
+{
+    "name": "shanghaiqibuwriter",
+    "parameter": {
+        "username": "",
+        "password": "",
+        "column": [],
+        "connection": [
+            {
+            "jdbcUrl": [],
+            "table": [],
+            "primaryKey": []
+            }
+        ],
+        "where": ""
+    }
+}

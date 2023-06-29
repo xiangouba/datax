@@ -1,0 +1,6 @@
+{
+    "name": "restfulapiwriter",
+    "class": "com.alibaba.datax.plugin.writer.restfulapiwriter.RestFulApiWriter",
+    "description": "restfulapiwriter from http",
+    "developer": "rh"
+}

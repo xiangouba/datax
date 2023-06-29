@@ -1,0 +1,12 @@
+{
+    "name": "restfulapiwriter",
+    "parameter": {
+        "url": "",
+        "method": "",
+        "dataPath": "",
+        "column": [],
+        "headerInfos": {},
+        "bodyParam":{},
+        "queryParam":{}
+    }
+}

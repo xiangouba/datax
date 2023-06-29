@@ -1,0 +1,16 @@
+{
+    "name": "gbase8awriter",
+    "parameter": {
+        "username": "",
+        "password": "",
+        "deleteFlag": "",
+        "column": [],
+        "connection": [
+            {
+            "jdbcUrl": [],
+            "table": []
+            }
+        ],
+        "where": ""
+    }
+}

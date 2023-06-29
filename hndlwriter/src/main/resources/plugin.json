@@ -1,0 +1,6 @@
+{
+    "name": "hndlwriter",
+    "class": "com.alibaba.datax.plugin.writer.hndlwriter.HndlWriter",
+    "description": "restfulapiwriter from http",
+    "developer": "rh"
+}

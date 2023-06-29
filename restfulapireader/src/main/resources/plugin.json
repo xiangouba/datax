@@ -1,0 +1,6 @@
+{
+    "name": "restfulapireader",
+    "class": "com.alibaba.datax.plugin.reader.restfulapireader.RestFulApiReader",
+    "description": "restfulapireader from http",
+    "developer": "rh"
+}

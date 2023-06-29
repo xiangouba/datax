@@ -1,0 +1,18 @@
+{
+  "name": "zhbbwriter",
+  "parameter": {
+    "url": "",
+    "method": "POST",
+    "iskafka": "0",
+    "columnMap": [
+      {
+        "columnName": "id",
+        "columnType": "Integer"
+      },
+      {
+        "columnName": "name",
+        "columnType": "String"
+      }
+    ]
+  }
+}

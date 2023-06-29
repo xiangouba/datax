@@ -1,0 +1,13 @@
+{
+    "name": "ydjtwbsjreader",
+    "parameter": {
+        "company_name":[],
+        "url": "",
+        "method": "",
+        "dataPath": "",
+        "column": [],
+        "headerInfos": {},
+        "bodyParam":{},
+        "queryParam":{}
+    }
+}

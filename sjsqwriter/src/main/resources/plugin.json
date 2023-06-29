@@ -1,0 +1,8 @@
+{
+    "name": "sjsqwriter",
+    "class": "com.alibaba.datax.plugin.writer.sjsqwriter.SjsqWriter",
+    "description": {
+        "mechanism": "use datax framework"
+    },
+    "developer": "rh"
+}

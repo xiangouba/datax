@@ -1,0 +1,24 @@
+{
+    "name": "hndlwriter",
+    "parameter": {
+        "topic": "",
+        "url": "",
+        "method": "",
+        "dataPath": "",
+        "aesParams": ["partnerCode","passTime"],
+        "pushColumns": "推送的字段",
+        "payFile":"payFileUpload",
+        "columnMap": [{
+            "columnName": "id",
+            "columnType": "Integer"
+        },
+            {
+                "columnName": "name",
+                "columnType": "String"
+            }],
+        "bootstrapServers": [],
+        "headerInfos": {},
+        "bodyParam":{},
+        "queryParam":{}
+    }
+}

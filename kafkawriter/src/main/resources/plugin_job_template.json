@@ -1,0 +1,17 @@
+{
+    "name": "kafkawriter",
+    "parameter": {
+        "topic": "first",
+        "bootstrapServers": "192.168.10.67:9092",
+        "column": [
+            {
+                "columnName": "id",
+                "columnType": "Integer"
+            },
+            {
+                "columnName": "name",
+                "columnType": "String"
+            }
+        ]
+    }
+}

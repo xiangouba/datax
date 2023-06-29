@@ -1,0 +1,15 @@
+{
+    "name": "gbase8areader",
+    "parameter": {
+        "username": "",
+        "password": "",
+        "column": [],
+        "connection": [
+            {
+            "jdbcUrl": [],
+            "table": []
+            }
+        ],
+        "where": ""
+    }
+}

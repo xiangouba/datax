@@ -1,0 +1,6 @@
+{
+    "name": "zhbbwriter",
+    "class": "com.alibaba.datax.plugin.writer.zhbbwriter.ZhbbWriter",
+    "description": "restfulapiwriter from http",
+    "developer": "rh"
+}
